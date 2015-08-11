@@ -1,0 +1,36 @@
+# hosts.yml
+#
+# List of hosts to be created by Vagrant. Your `site.yml` should contain
+# the same hosts. This file controls the Vagrant settings, `site.yml` the
+# Ansible-related stuff.
+---
+-
+  name: pu010
+  ip: 192.0.2.10
+  mac: 080027654EE1
+  netmask: 255.255.255.0
+-
+  name: pu001
+  ip: 192.0.2.2
+  mac: 080027654EE2
+  netmask: 255.255.255.0
+  
+#-
+#  name: pu002
+#  ip: 192.0.2.3
+- 
+  name: pr011
+  ip: 172.16.0.11
+  mac: 080027654EE0
+  netmask: 255.255.0.0
+-
+  name: pr001
+  ip: 172.16.0.2
+  mac: 080027E73C0E
+  netmask: 255.255.0.0
+- 
+  name: pr010
+  ip: 172.16.0.10
+  netmask: 255.255.0.0
+
+

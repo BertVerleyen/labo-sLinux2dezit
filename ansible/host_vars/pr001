@@ -1,0 +1,26 @@
+
+# host_vars/pr001
+# vi: ft=yaml
+---
+domain: linuxlab.net
+
+subnets:
+  - name: 172.16.0.0
+    netmask: 255.255.0.0
+    router: 172.16.255.254
+    domain: linuxlab.net
+    dns: 192.0.2.2
+    range: 172.16.100.1 172.16.255.253  
+    
+    
+dhcp_internal:
+  - name: pr001
+    ip: 172.16.0.2
+    mac: 08:00:27:E7:3C:0E
+  - name: pr010
+    ip: 172.16.0.10
+    mac: 07:05:06:04:09:00
+  - name: pr011
+    ip: 172.16.0.11
+    mac: 08:00:27:65:4E:E0
+  

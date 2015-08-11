@@ -1,0 +1,15 @@
+; Reverse zone file for linuxlab.net
+$TTL 1W
+$ORIGIN 16.172.in-addr.arpa.
+; primary NS email address admin
+@ IN SOA pu001.linuxlab.net. hostmaster.linuxlab.net. (
+14101813 ; serial
+1D ; refresh
+1H ; retry
+1W ; expire
+1D ) ; negative caching TTL
+@ IN NS pu001.linuxlab.net.
+2.0 IN PTR pr001.linuxlab.net.
+3.0 IN PTR pr002.linuxlab.net.
+10.0 IN PTR pr010.linuxlab.net.
+11.0 IN PTR pr020.linuxlab.net.
